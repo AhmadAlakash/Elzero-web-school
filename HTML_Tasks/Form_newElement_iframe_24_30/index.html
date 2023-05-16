@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Forms</h1>
+    <!-- <form action="" method="get">
+      <label for="user_name">User Name</label>
+      <br />
+      <input
+        name="user_name"
+        type="text"
+        id="user_name"
+        required
+        placeholder="your name"
+      />
+      <hr />
+      <label for="pass">Password</label>
+      <br />
+      <input
+        name="pass"
+        type="password"
+        id="pass"
+        placeholder="complex pass is better"
+      />
+      <hr />
+      <label for="tel">Telefone</label>
+      <br />
+      <input
+        name="tel"
+        type="number"
+        id="tel"
+        placeholder="123(234)201000+"
+        min="10"
+        max="12"
+      />
+      <hr />
+      <label for="email">Email</label>
+      <br />
+      <input
+        name="email"
+        type="email"
+        required
+        placeholder="alala@(gmail).com"
+        value="ahmad@gmail.com"
+        id="email"
+      />
+      <hr />
+      <label for="sub">Subject</label>
+      <br />
+      <input name="sub" type="text" id="sub" placeholder="what you need " />
+      <br />
+      <input type="hidden" name="hidden" value="123123" />
+
+      <input type="reset" value="Empty Form" />
+      <input type="submit" value="Send Data" />
+    </form>
+    <hr />
+    <hr />
+    <hr />
+    <label for="range">Range</label>
+    <br />
+    <input
+      type="range"
+      name="range"
+      id="range"
+      minlength="100"
+      maxlength="400"
+      step="10"
+    />
+    <hr />
+    <hr />
+    <hr /> -->
+    <!------------------------------>
+    <!------------------------------>
+    <!------------part 2------------------>
+    <form action="" method="" novalidate target="_blank">
+      <label for="user">User Name</label>
+      <br />
+      <input type="text" name="user" minlength="5" maxlength="20" required />
+      <br />
+      <label for="mail">Email</label>
+      <br />
+      <input type="email" name="mail" readonly value=" o@o.com" />
+      <br />
+      <label for="token">Token</label>
+      <br />
+      <input
+        type="text"
+        name="token"
+        hidden
+        value="b92f1fc2fce391ad7af633723afd3055"
+      />
+      <hr />
+      <hr />
+      <hr />
+      <!---->
+      <div>
+        <input id="win" name="system" type="radio" value="windows" />
+        <label for="win">Windows</label>
+      </div>
+      <div>
+        <input id="lin" name="system" type="radio" value="Linux" />
+        <label for="lin">Linux</label>
+      </div>
+      <div>
+        <input id="mac" name="system" type="radio" value="mac" />
+        <label for="mac">Mac</label>
+      </div>
+      <br />
+      <br />
+      <hr />
+      <!--check box--->
+      <!--check box--->
+      <!--check box--->
+      <label for="html">HTML</label>
+      <input
+        name="programming_language"
+        value="html"
+        checked
+        type="checkbox"
+        id="html"
+      />
+      <br />
+      <label for="css">CSS</label>
+      <input
+        checked
+        type="checkbox"
+        name="programming_language"
+        value="css"
+        id="css"
+      />
+      <br />
+      <label for="js">JS</label>
+      <input type="checkbox" name="programming_language" value="js" id="js" />
+      <br />
+      <br />
+      <!--select--->
+      <!--select--->
+      <!--select--->
+      <div>
+        <label for="books">Chose Your Book</label>
+        <select name="" id="books">
+          <option value="1">Book 1</option>
+          <option value="2">Book 2</option>
+          <option value="3">Book 3</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <label for="books">Chose Your Book</label>
+        <select name="boóks" multiple id="books">
+          <optgroup label="Romatic">
+            <option value="1">Book 1</option>
+            <option selected value="2">Book 2</option>
+            <option value="3">Book 3</option>
+          </optgroup>
+          <optgroup label="Police">
+            <option selected value="1">Book 1</option>
+            <option value="2">Book 2</option>
+            <option value="3">Book 3</option>
+          </optgroup>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="skills">Skills :</label>
+        <br />
+        <br />
+        <select style="text-align: center" name="skills" id="skills" multiple>
+          <optgroup label="PHP">
+            <option value="v5.0">v5.0</option>
+            <option value="v7.0">v7.0</option>
+            <option value="v8.0">v8.0</option>
+          </optgroup>
+          <optgroup label="Python">
+            <option value="v2.0">v2.0</option>
+            <option value="v3.0">v3.0</option>
+            <option value="v3.9">v3.9</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="url">URL</label>
+        <input type="url" required name="url" id="url" />
+        <br />
+        <label for="file">Chose File</label>
+        <input type="file" name="file" id="file" />
+        <br />
+        <label for="search">Search</label>
+        <input
+          type="search"
+          name="search"
+          placeholder="Enter  A search word"
+          id="search"
+          autofocus
+        />
+      </div>
+      <div>
+        <label for="date">Date</label>
+        <input id="date" type="date" />
+      </div>
+      <div>
+        <label for="month">Month</label>
+        <input id="month" type="month" />
+      </div>
+      <div>
+        <label for="week">Week</label>
+        <input id="week" type="week" />
+      </div>
+      <div>
+        <label for="time">Time</label>
+        <input id="time" type="time" />
+      </div>
+      <div>
+        <input list="programming" name="prog_language" />
+        <datalist id="programming">
+          <option value="PHP"></option>
+          <option value="Python"></option>
+          <option value="C#"></option>
+          <option value="C"></option>
+          <option value="Java"></option>
+        </datalist>
+      </div>
+      <!---->
+      <!---->
+      <!--new elements-->
+      <hr />
+      <br />
+      <div>
+        <q>This is important word</q>
+        <q>This is important word</q>
+        <blockquote>This is Blockquote</Blockquote></blockquote>
+      </div>
+      <div>
+        <button>Click</button>
+      </div>
+      <div>
+        <!--wbr-->
+https://www.youtube.com/<wbr>watch?v=AzjtVtxoBLc <wbr>      </div>
+      <div>
+        <code>
+          <pre>
+            var x = 10;
+            var y = "a";
+          </pre>
+        </code>
+        <pre>
+          Hello Line One
+          Hello Line Two
+          Hello Line Three
+                Hello Line Four
+
+        </pre>
+        <div>
+        <iframe src="https://elzero.org" frameborder="0" width="800px" height="400px"></iframe>
+        </div>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Empty" />
+      </div>
+    </form>
+  </body>
+</html>

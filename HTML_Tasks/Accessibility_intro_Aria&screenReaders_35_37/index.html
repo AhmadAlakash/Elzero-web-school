@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibilty</title>
+  </head>
+  <body>
+    <div class="choose-skill">
+      <div
+        class="skill"
+        role="checkbox"
+        tabindex="0"
+        aria-labelledby="one"
+        name="one"
+      >
+        Python
+      </div>
+      <label for="one" aria-label="one">skill one</label>
+      <div
+        role="checkbox"
+        class="skill"
+        tabindex="0"
+        aria-labelledby="two"
+        name="two"
+      >
+        PHP
+      </div>
+      <label for="two">skill two</label>
+      <div
+        tabindex="0"
+        class="skill"
+        role="checkbox"
+        name="three"
+        aria-labelledby="three"
+      >
+        Javascript
+      </div>
+      <label for="three">Skill Three</label>
+    </div>
+  </body>
+</html>
