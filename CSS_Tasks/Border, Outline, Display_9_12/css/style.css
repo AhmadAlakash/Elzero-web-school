@@ -1,0 +1,71 @@
+.mydiv1 {
+  border: 5px solid red;
+  outline: 5px solid black;
+  margin: 1%;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+
+  display: inline-block;
+}
+.mydiv2 {
+  border: 5px solid;
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+  border-left: 5px solid green;
+  border-right: 5px solid green;
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  margin: 1%;
+  outline: 5px solid;
+}
+.mydiv3 {
+  border-top: 5px dashed red;
+  border-right: 5px dashed green;
+  border-bottom: 5px dashed blue;
+  border-left: 5px dashed yellow;
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  outline: 5px solid;
+  margin: 1%;
+}
+div p {
+  margin: auto;
+  margin-top: 25%;
+  color: blue;
+  font-size: 22px;
+}
+/*------------*/
+/*------------*/
+/*------------*/
+/*------------*/
+.p1 {
+  width: 400px;
+  background-color: #eee;
+  margin: 5%;
+}
+
+.p2 {
+  width: 400px;
+
+  background-color: #eee;
+  margin: 5%;
+}
+
+.p3 {
+  width: 400px;
+  background-color: #eee;
+  margin: 5%;
+}
+.span1 {
+  border-left: 5px solid blueviolet;
+  margin-right: 1%;
+}
+.span2 {
+  border-left: 5px solid blue;
+  margin-right: 1%;
+}
