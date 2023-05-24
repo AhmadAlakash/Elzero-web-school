@@ -1,0 +1,55 @@
+.one {
+  border: 2px solid orangered;
+  padding: 15px;
+  text-align: center;
+  margin: 1%;
+}
+.one p {
+  border: inherit;
+  padding: inherit;
+  background-color: bisque;
+}
+.two {
+  border: 3px solid rgb(0, 217, 255);
+  padding: 15px;
+  text-align: center;
+  margin: 1%;
+}
+.two p {
+  border: inherit;
+  padding: inherit;
+  background-color: bisque;
+}
+
+/*------------------*/
+/*------------------*/
+
+/*-----------------*/
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+}
+.cairo {
+  font-family: "Cairo", sans-serif;
+  text-transform: capitalize;
+}
+.jomhuria {
+  font-family: "Jomhuria", cursive;
+  text-transform: capitalize;
+}
+/*-------------*/
+/*-------------*/
+/*-------------*/
+html {
+  font-size: 20px;
+}
+.first-p {
+  font-size: 2.5rem;
+  
+}
+.second-p {
+  font-size: 2rem;
+}
+.third-p {
+  font-size: 1.5rem;
+}
