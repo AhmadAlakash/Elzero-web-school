@@ -1,28 +1,63 @@
-.parent {
-  width: 1000px;
-  background-color: rgb(168, 150, 129);
+* {
 }
-.fuul,
+body {
+  text-align: center;
+}
+.parent {
+  width: 800px;
+  margin: 20px auto;
+
+  padding: 0;
+  background-color: rgb(222, 212, 201);
+  text-align: center;
+}
+
+.full,
 .three,
 .half,
 .four {
   float: left;
-  margin: 15px;
-  text-align: center;
-  background-color: rgb(97, 85, 70);
-}
-.full {
-  width: calc((100% - 15px) / 2);
-}
-.three {
-  width: calc((100% - 15px) / 4);
-}
-.half {
-  width: calc((100% - 15px) / 3);
-}
-.four {
-  width: calc((100% - 15px) / 5);
+  margin-top: 15px;
+  margin-left: 15px;
+
+  padding: 10px 0;
+  background-color: #eee;
 }
 .clear {
   clear: both;
+}
+.full {
+  width: calc(100% - 30px);
+}
+.three {
+  width: calc((100% - 60px) / 3);
+}
+.half {
+  width: calc((100% - 45px) / 2);
+}
+.four {
+  width: calc((100% - 75px) / 4);
+  margin-bottom: 15px;
+}
+.clear {
+  clear: both;
+}
+
+/*--------------------*/
+/*--------------------*/
+/*--------------------*/
+div {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: rgb(222, 212, 201); /* Get The Background From Image */
+  color: black;
+}
+.one {
+  background-color: rgba(222, 212, 201, 0.339);
+}
+.two {
+  opacity: 0.1;
 }
