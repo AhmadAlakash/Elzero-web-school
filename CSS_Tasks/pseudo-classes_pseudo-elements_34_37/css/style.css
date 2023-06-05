@@ -1,0 +1,35 @@
+.first {
+  width: 300px;
+  height: 60px;
+  background-color: #eee;
+  text-align: center;
+  margin: 10px auto;
+  line-height: 55px;
+}
+div:empty {
+  background-color: red;
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  margin: 10px auto;
+  line-height: 55px;
+}
+/*-------------------*/
+/*-------------------*/
+/*-------------------*/
+.second {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+  position: relative;
+  width: 400px;
+}
+.second::first-letter {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+}
