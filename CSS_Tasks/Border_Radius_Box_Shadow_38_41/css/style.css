@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+.first {
+  text-align: center;
+  position: relative;
+  width: 400px;
+  float: left;
+  left: 25%;
+  margin-top: 100px;
+}
+.one {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+  counter-increment: numbers;
+  position: absolute;
+  float: left;
+  position: relative;
+  margin: 3%;
+  text-align: center;
+  /* box-shadow: 10% 10% 10% 5% black; */
+}
+.one::after {
+  content: counter(numbers);
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  position: absolute;
+  float: left;
+  top: -15px;
+  left: 30px;
+}
