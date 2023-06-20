@@ -29,7 +29,11 @@
 .clear {
   clear: both;
 }
-
+.first div::before {
+  content: attr(data-person);
+  display: inline-block;
+  margin: 35px auto;
+}
 .first div::after {
   content: counter(name);
   display: inline-block;
@@ -64,39 +68,97 @@
 /*---------------*/
 /*---------------*/
 /*---------------*/
-.third {
-  width: 550px;
-  background-color: #e91e63;
-  margin: 20px auto;
-}
 .parent {
-  width: 100%;
+  width: 550px;
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px auto;
   position: relative;
 }
-.child {
+.child1,
+.child2 {
   width: 200px;
-  height: 200px;
-  background-color: #ccc;
-  text-align: center;
-  border: 1px solid;
-  margin: 1%;
+  height: 300px;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
   float: left;
+  margin: 25px;
+  position: relative;
 }
-.circle {
+.child1 {
+  margin-left: 50px;
+}
+.clear {
+  clear: both;
+}
+.ch1::after {
+  content: attr(data-card);
+  display: inline-block;
+  background-color: #2196f3;
+  padding: 5px;
+  width: 80%;
   text-align: center;
-  padding: 30px;
-  width: 100px;
-  height: 100px;
-  background-color: #eee;
+  color: white;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.ch2 {
+  width: 150px;
+  height: 150px;
+  background-color: #cccc;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  margin: 20px auto;
+  position: absolute;
+  top: 100px;
+  left: 25px;
 }
-/* .virtical {
-  width: 20px;
-  height: 200px;
+.ch2::after {
+  content: attr(data-circle);
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 55px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.or {
+  width: 25px;
+  height: 25px;
+  position: absolute;
   background-color: #2196f3;
-} */
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  left: 275px;
+  top: 150px;
+}
+.or::after {
+  content: "";
+  background-color: #2196f3;
+  width: 2px;
+  height: 150px;
+  position: absolute;
+  top: 20px;
+  left: 12px;
+}
+.or::before {
+  content: "";
+  background-color: #2196f3;
+  width: 2px;
+  height: 130px;
+  position: absolute;
+  top: -130px;
+  left: 12px;
+}
