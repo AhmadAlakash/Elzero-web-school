@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+.parent {
+  margin: 20px auto;
+  width: 600px;
+  height: 80vh;
+  background-color: #eee;
+  display: grid;
+  gap: 1px 1px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.parent div {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.three {
+  grid-column: span 2;
+  grid-row: span 4;
+}

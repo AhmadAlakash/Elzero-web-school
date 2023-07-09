@@ -111,14 +111,7 @@ footer {
   display: grid;
   gap: 13px 13px;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
-  grid-template-areas:
-    "one one one one one one one one one one"
-    "two two two two two two two three three three "
-    "four four four five five five five five five five"
-    "six six six five five five five five five five"
-    "seven seven seven five five five five five five five"
-    "eight eight eight eight eight eight eight eight eight eight ";
+  grid-template-rows: repeat(autofill, minmax(50px, 1fr));
 }
 .grid3 div {
   background-color: #03a9f4;
@@ -129,30 +122,31 @@ footer {
   align-items: center;
 }
 .one {
-  grid-area: one;
-  order: 8;
+  grid-area: 6/11; /* to change the z-index or position */
+  grid-column: span 10;
 }
 .two {
-  grid-area: two;
+  grid-column: span 7;
 }
 .three {
-  grid-area: three;
+  grid-column: span 3;
 }
 .four {
-  grid-area: four;
+  grid-column: span 3;
 }
 .five {
-  grid-area: five;
+  grid-column: span 7;
+  grid-row: span 3;
 }
 .six {
-  grid-area: six;
+  grid-column: span 3;
 }
 .seven {
-  grid-area: seven;
+  grid-column: span 3;
 }
 .eight {
-  grid-area: eight;
-  order: 1;
+  grid-area: 1/11;
+  grid-column: span 10;
 }
 /*----------*/
 /*----------*/
@@ -177,3 +171,55 @@ footer {
   color: white;
   font-weight: bold;
 }
+.grid5 {
+  background-color: #eee;
+  width: 800px;
+  height: 100vh;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2px 2px;
+}
+.grid5 div {
+  background-color: #ccc;
+}
+/*///////////*/
+/*/ //////////*/
+/*///////////*/
+.team {
+  width: 1500px;
+  background-color: #eee;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 5px 5px;
+}
+.team div {
+  position: relative;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 25, 0, 0.697);
+}
+.team div::after {
+  content: "😅";
+  position: absolute;
+  bottom: 3px;
+  right: 5px;
+  font-size: 20px;
+}
+.team div h3 {
+  font-weight: bold;
+  padding: 5px;
+}
+.team div .developer {
+  color: #403f3f;
+  padding: 5px;
+}
+.first{}
+.second{}
+.third{}
+.fourth{}
+.fifth{}
+.sixth{}
