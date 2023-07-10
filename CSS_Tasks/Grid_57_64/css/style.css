@@ -177,8 +177,7 @@ footer {
   height: 100vh;
   margin: 20px auto;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 2px 2px;
 }
 .grid5 div {
@@ -192,9 +191,10 @@ footer {
   background-color: #eee;
   margin: 20px auto;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(4, auto);
-  gap: 5px 5px;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 10px 10px;
+  padding: 50px;
 }
 .team div {
   position: relative;
@@ -215,11 +215,53 @@ footer {
 }
 .team div .developer {
   color: #403f3f;
+  padding: 10px;
+}
+.team p {
   padding: 5px;
 }
-.first{}
-.second{}
-.third{}
-.fourth{}
-.fifth{}
-.sixth{}
+.first {
+  grid-area: 1/1/2/4; /*2/6*/
+}
+.second {
+  grid-area: 1/4/1/5; /*2/2*/
+}
+.third {
+  grid-area: 1/5/4/6; /*10/3*/
+  color: white;
+  background-color: black !important;
+}
+.fourth {
+  grid-area: 2/1/4/2; /*1*/
+}
+.fifth {
+  grid-area: 2/2/2/5;
+  color: white;
+  background-color: black !important;
+}
+.fifth p {
+  color: white;
+  background-color: black;
+}
+.fifth h3 {
+  color: white;
+  background-color: black;
+}
+.sixth {
+  grid-area: 3/2/4/5;
+}
+.seventh {
+  grid-area: 4/1/5/2;
+}
+.eighth {
+  grid-area: 4/2/5/3;
+}
+.ninth {
+  grid-area: 4/3/5/4;
+}
+.tenth {
+  grid-area: 4/4/5/5;
+}
+.eleven {
+  grid-area: 4/5/5/6;
+}
