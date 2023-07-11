@@ -255,6 +255,8 @@ footer {
 }
 .eighth {
   grid-area: 4/2/5/3;
+  background-color: black !important;
+  color: white;
 }
 .ninth {
   grid-area: 4/3/5/4;
