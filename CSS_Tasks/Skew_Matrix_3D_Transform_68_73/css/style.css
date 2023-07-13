@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --rgb1: #ff5722;
+  --rgb2: #009688;
+  --rgb3: #000;
+  --rgb4: #607d8b;
+  --rgb4: #fa3664;
+  --rgb4: #0075ff;
+}
+.one {
+  width: 150px;
+  background-color: var(--rgb1);
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
