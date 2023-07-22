@@ -7,12 +7,184 @@
 .one {
   width: 50px;
   height: 50px;
-  background-color: #eb175f;
   margin: 100px auto;
   position: relative;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 5px solid #eb175f;
+  border-left-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.one:hover {
+  animation-play-state: paused;
 }
 .one::before,
 .one::after {
   content: "";
   position: absolute;
+  border: 5px solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.one::before {
+  width: 55px;
+  height: 55px;
+  border-color: rgb(21 144 233) transparent rgb(21 144 233) rgb(21 144 233);
+}
+.one::after {
+  width: 70px;
+  height: 70px;
+  border-color: rgb(252 178 0) rgb(252 178 0) rgb(252 178 0) transparent;
+}
+@keyframes loading {
+  from {
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+/*--------*/
+/*--------*/
+/*--------*/
+/*--------*/
+.two {
+  width: 50px;
+  height: 50px;
+  margin: 100px auto;
+  position: relative;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 5px solid rgb(21 144 233);
+  border-bottom-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.two::before,
+.two::after {
+  content: "";
+  position: absolute;
+  content: "";
+  position: absolute;
+  border: 5px solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation-name: loading;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.two::before {
+  width: 55px;
+  height: 55px;
+  border-color: rgb(252 178 0) rgb(252 178 0) transparent rgb(252 178 0);
+  animation-duration: 5s;
+}
+.two::after {
+  width: 70px;
+  height: 70px;
+  border-color: black black transparent black;
+  animation-duration: 10s;
+}
+.two:hover,
+.two:hover::after,
+.two:hover::before {
+  animation-play-state: running;
+}
+
+/**------------------*/
+/**------------------*/
+/**------------------*/
+.three {
+  background-color: rgb(231 231 248);
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 100px auto;
+  border: 6px solid rgb(0 0 0);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-left-color: transparent;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+/**------------------*/
+/**------------------*/
+/**------------------*/
+.grid {
+  width: 500px;
+  height: 100vh;
+  background-color: #eee;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns:repeat();
+  grid-template-rows: 10, auto;
+}
+.grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(50 50 52);
+}
+.grid .first {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.grid .second {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.grid .third {
+}
+
+.grid .fourth {
+}
+
+.grid .fifth {
+}
+
+.grid .sixth {
 }
