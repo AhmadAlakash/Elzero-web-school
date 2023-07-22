@@ -22,7 +22,7 @@
   animation-name: loading;
   animation-duration: 2s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
   animation-play-state: running;
 }
 
@@ -83,7 +83,7 @@
   animation-name: loading;
   animation-duration: 1s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
   animation-play-state: paused;
 }
 
@@ -101,7 +101,7 @@
   -o-border-radius: 50%;
   animation-name: loading;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
   animation-play-state: paused;
 }
 
@@ -142,49 +142,192 @@
   animation-name: loading;
   animation-duration: 1s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
   animation-direction: reverse;
 }
 /**------------------*/
 /**------------------*/
 /**------------------*/
-.grid {
-  width: 500px;
-  height: 100vh;
-  background-color: #eee;
+
+.parent {
+  width: 600px;
+  height: 400px;
   margin: 10px auto;
-  display: grid;
-  grid-template-columns:repeat();
-  grid-template-rows: 10, auto;
-}
-.grid div {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  justify-content: space-evenly;
+  position: relative;
+}
+.parent::before,
+.parent::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+}
+
+.E,
+.L {
+  width: 250px;
+  height: 300px;
+ 
+  display: grid;
+  grid-template-columns: repeat(4, 55px);
+  grid-template-rows: repeat(7, 55px);
+}
+.E div,
+.L div {
   background-color: rgb(50 50 52);
 }
-.grid .first {
-  grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 1;
+.first {
+  grid-area: 1/1/1/4;
 }
-.grid .second {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 2;
-  grid-row-end: 5;
+.second {
+  grid-area: 2/1/4/1;
+}
+.third {
+  grid-area: 3/2/3/4;
+}
+.fourth {
+  grid-area: 4/1/5/1;
+}
+.fivth {
+  grid-area: 5/1/5/4;
+}
+.first-l {
+  grid-area: 1/1/5/1;
+}
+.second-l {
+  grid-area: 5/1/5/4;
+}
+.parent::before {
+  top: 7px;
+  left: 150px;
+  animation-name: move-E;
+  animation-duration: 6s;
+  
 }
 
-.grid .third {
+@keyframes move-E {
+  0% {
+    top: 7px;
+    left: 150px;
+  }
+  5% {
+    transform: translate(-110px, 0);
+    -webkit-transform: translate(-110px, 0);
+    -moz-transform: translate(-110px, 0);
+    -ms-transform: translate(-110px, 0);
+    -o-transform: translate(-110px, 0);
+  }
+  10% {
+    transform: translate(-110px, 110px);
+    -webkit-transform: translate(-110px, 110px);
+    -moz-transform: translate(-110px, 110px);
+    -ms-transform: translate(-110px, 110px);
+    -o-transform: translate(-110px, 110px);
+  }
+  20% {
+    transform: translate(7px, 110px);
+    -webkit-transform: translate(7px, 110px);
+    -moz-transform: translate(7px, 110px);
+    -ms-transform: translate(7px, 110px);
+    -o-transform: translate(7px, 110px);
+  }
+  25% {
+    transform: translate(-110px, 110px);
+    -webkit-transform: translate(-110px, 110px);
+    -moz-transform: translate(-110px, 110px);
+    -ms-transform: translate(-110px, 110px);
+    -o-transform: translate(-110px, 110px);
+  }
+  35% {
+    transform: translate(-110px, 220px);
+    -webkit-transform: translate(-110px, 220px);
+    -moz-transform: translate(-110px, 220px);
+    -ms-transform: translate(-110px, 220px);
+    -o-transform: translate(-110px, 220px);
+  }
+  45% {
+    transform: translate(7px, 220px);
+    -webkit-transform: translate(7px, 220px);
+    -moz-transform: translate(7px, 220px);
+    -ms-transform: translate(7px, 220px);
+    -o-transform: translate(7px, 220px);
+  }
+  55% {
+    transform: translate(-110px, 220px);
+    -webkit-transform: translate(-110px, 220px);
+    -moz-transform: translate(-110px, 220px);
+    -ms-transform: translate(-110px, 220px);
+    -o-transform: translate(-110px, 220px);
+  }
+  65% {
+    transform: translate(-110px, 110px);
+    -webkit-transform: translate(-110px, 110px);
+    -moz-transform: translate(-110px, 110px);
+    -ms-transform: translate(-110px, 110px);
+    -o-transform: translate(-110px, 110px);
+  }
+  70% {
+    transform: translate(7px, 110px);
+    -webkit-transform: translate(7px, 110px);
+    -moz-transform: translate(7px, 110px);
+    -ms-transform: translate(7px, 110px);
+    -o-transform: translate(7px, 110px);
+  }
+  80% {
+    transform: translate(-110px, 110px);
+    -webkit-transform: translate(-110px, 110px);
+    -moz-transform: translate(-110px, 110px);
+    -ms-transform: translate(-110px, 110px);
+    -o-transform: translate(-110px, 110px);
+  }
+  90% {
+    transform: translate(-110px, 0px);
+    -webkit-transform: translate(-110px, 0px);
+    -moz-transform: translate(-110px, 0px);
+    -ms-transform: translate(-110px, 0px);
+    -o-transform: translate(-110px, 0px);
+  }
+  100% {
+  }
 }
-
-.grid .fourth {
+.parent::after {
+  top: 227px;
+  left: 435px;
+  opacity: 0;
+  animation-name: move-L;
+  animation-duration: 3s;
+  animation-delay: 6s;
+  
 }
-
-.grid .fifth {
-}
-
-.grid .sixth {
+@keyframes move-L {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-110px, 0);
+    -webkit-transform: translate(-110px, 0);
+    -moz-transform: translate(-110px, 0);
+    -ms-transform: translate(-110px, 0);
+    -o-transform: translate(-110px, 0);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(-110px, -220px);
+    -webkit-transform: translate(-110px, -220px);
+    -moz-transform: translate(-110px, -220px);
+    -ms-transform: translate(-110px, -220px);
+    -o-transform: translate(-110px, -220px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-110px, -220px);
+    -webkit-transform: translate(-110px, -220px);
+    -moz-transform: translate(-110px, -220px);
+    -ms-transform: translate(-110px, -220px);
+    -o-transform: translate(-110px, -220px);
+  }
 }
