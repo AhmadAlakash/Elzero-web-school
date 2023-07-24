@@ -3,3 +3,37 @@
   padding: 0;
   margin: 0;
 }
+hr {
+  margin: 20px auto;
+}
+div.main.red {
+  color: red;
+}
+/*----------*/
+/*----------*/
+/*----------*/
+/*-----
+another sulo: .parent2 > div:nth-child(2){
+  color:red;
+}
+-----*/
+.parent2 :nth-child(2) {
+  /*-----
+another sulo: .parent2 > div:nth-child(2){
+  color:red;
+}
+-----*/
+  color: red;
+}
+/*----------*/
+/*----------*/
+/*----------*/
+.parent3 .baby:only-child {
+  color: red;
+}
+/*----------*/
+/*----------*/
+/*----------*/
+ {
+  color: red;
+}
