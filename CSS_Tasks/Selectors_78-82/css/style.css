@@ -34,6 +34,33 @@ another sulo: .parent2 > div:nth-child(2){
 /*----------*/
 /*----------*/
 /*----------*/
- {
+.fourth > div[title]:not(.no-need) {
+  color: red;
+}
+
+/*----------*/
+/*----------*/
+/*----------*/
+div:not(.no-need) > p + div:last-child[title]:not(.no-need) {
+  color: red;
+}
+
+/*----------*/
+/*----------*/
+/*----------*/
+.six div:not(.no-need) > div:nth-last-of-type(2) {
+  color: red;
+}
+/*----------*/
+/*----------*/
+/*----------*/
+.seven div:first-of-type > div:nth-last-of-type(2) {
+  color: red;
+}
+
+/*----------*/
+/*----------*/
+/*----------*/
+.eight div > :not(:first-child, h3, :last-child) {
   color: red;
 }
