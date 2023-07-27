@@ -113,22 +113,7 @@ hr {
   }
   .assign-three .meddl,
   .assign-three .last-p {
-    width: calc((80% - 10px) / 3) ;
-    margin-bottom: 30px;
-  }
-  .assign-three > div h3 {
-    color: red;
-  }
-}
-/* Medium */
-@media() {
-  .assign-three div.first-p {
-    width: calc(90% - 10px) !important;
-    margin-bottom: 30px;
-  }
-  .assign-three .meddl,
-  .assign-three .last-p {
-    width: calc((80% - 10px) / 3) !important;
+    width: calc((80% - 10px) / 3);
     margin-bottom: 30px;
   }
   .assign-three > div h3 {
