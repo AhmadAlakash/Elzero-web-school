@@ -1,0 +1,7 @@
+.assign-one {
+}
+@media print {
+  .assign-one {
+    font-size: 100px;
+  }
+}
