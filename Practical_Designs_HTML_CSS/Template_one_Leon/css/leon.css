@@ -34,7 +34,7 @@ body {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
-  } 
+  }
 }
 
 /*--end global rules------*/
@@ -42,14 +42,31 @@ body {
 
 /*-- start component------*/
 /*-- start component------*/
-.special-header {
+/* #ebeced */
+
+.special-heading {
+  color: #ebeced;
+  font-size: 100px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -3px;
+  margin: 0;
 }
-/*-- end component------*/
-/*-- end component------*/
-
-/*---start header--------*/
-/*---start header--------*/
-
+.special-heading + p {
+  margin: -30px 0 0;
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+}
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 60px;
+  }
+  .special-heading + p {
+    margin-top: 20px;
+  }
+}
+/*-- end component------*/ /*-- end component------*/ /*---start header--------*/ /*---start header--------*/
 header {
   padding: 20px;
 }
@@ -202,7 +219,37 @@ header .links ul li:not(:last-child) {
 /*---end features section------*/
 /*---start services section------*/
 /*---start services section------*/
-
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.services .services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 100px;
+}
+.services .services-content .serv {
+  display: flex;
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .services-content .serv {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.services-content .serv i {
+  color: var(--main-color);
+  flex-basis: 60px;
+}
+.services-content .serv .text {
+  flex: 1;
+}
+.services-content .serv .text h3 {
+}
+.services-content .serv .text p {
+}
 /*---end services section------*/
 /*---end services section------*/
 
